@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C208E4AB224AABA2000665F2 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C208E4AA224AABA2000665F2 /* Data.swift */; };
 		C2CCC91D2245E5F800BA5D95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CCC91C2245E5F800BA5D95 /* AppDelegate.swift */; };
 		C2CCC91F2245E5F800BA5D95 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CCC91E2245E5F800BA5D95 /* MasterViewController.swift */; };
 		C2CCC9212245E5F800BA5D95 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CCC9202245E5F800BA5D95 /* DetailViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C208E4AA224AABA2000665F2 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		C2CCC9192245E5F800BA5D95 /* SplitViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplitViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2CCC91C2245E5F800BA5D95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2CCC91E2245E5F800BA5D95 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				C2CCC9252245E5F900BA5D95 /* Assets.xcassets */,
 				C2CCC9272245E5F900BA5D95 /* LaunchScreen.storyboard */,
 				C2CCC92A2245E5F900BA5D95 /* Info.plist */,
+				C208E4AA224AABA2000665F2 /* Data.swift */,
 			);
 			path = SplitViewExample;
 			sourceTree = "<group>";
@@ -99,6 +102,7 @@
 				TargetAttributes = {
 					C2CCC9182245E5F800BA5D95 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -141,6 +145,7 @@
 				C2CCC9212245E5F800BA5D95 /* DetailViewController.swift in Sources */,
 				C2CCC91F2245E5F800BA5D95 /* MasterViewController.swift in Sources */,
 				C2CCC91D2245E5F800BA5D95 /* AppDelegate.swift in Sources */,
+				C208E4AB224AABA2000665F2 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +299,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.SplitViewExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -311,7 +316,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.SplitViewExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
