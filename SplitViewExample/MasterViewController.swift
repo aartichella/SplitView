@@ -11,7 +11,6 @@ import UIKit
 class MasterViewController: UITableViewController {
 
     var detailViewController: DetailViewController? = nil
-    var objects = [Any]()
 
 
     override func viewDidLoad() {
@@ -21,15 +20,18 @@ class MasterViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
             if let indexPath = tableView.indexPathForSelectedRow {
-                let object = objects[indexPath.row] as! NSDate
                 let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
-                controller.detailItem = object
+                controller.displayImage = imagesArray[indexPath.row]
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
         }
     }
-
+    
+    override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        clearsSelectionOnViewWillAppear = true
+    }
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -43,15 +45,16 @@ class MasterViewController: UITableViewController {
 
         cell.textLabel!.text = namesArray[indexPath.row]
         cell.backgroundColor = colorsArray[indexPath.row]
+        
         return cell
     }
-
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-       
-        return true
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if let navBarHeight = navigationController?.navigationBar.frame.height
+        {return (tableView.frame.height - navBarHeight)/CGFloat(namesArray.count)}
+        else
+        {return (tableView.frame.height - 60)/CGFloat(namesArray.count)}
     }
-
-
+   
 
 }
 

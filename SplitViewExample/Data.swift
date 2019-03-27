@@ -19,4 +19,4 @@ let imagesArray = [camera, city, animals, flowers, stand, urban]
 
 let namesArray = ["CAMERA", "CITY", "ANIMALS", "FLOWERS", "STAND", "URBAN"]
 
-let colorsArray = [#colorLiteral(red: 1, green: 0.1918507635, blue: 0.1281559252, alpha: 1), #colorLiteral(red: 0, green: 0.5898008943, blue: 1, alpha: 1), #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1), #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1), #colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1), #colorLiteral(red: 0.5787474513, green: 0.3215198815, blue: 0, alpha: 1)]
+let colorsArray = [#colorLiteral(red: 0.03340965878, green: 0.8324663107, blue: 1, alpha: 1), #colorLiteral(red: 1, green: 0.4932718873, blue: 0.4739984274, alpha: 1), #colorLiteral(red: 0.07144261126, green: 0.8946345037, blue: 0.08471571932, alpha: 1), #colorLiteral(red: 1, green: 0.8323456645, blue: 0.4732058644, alpha: 1), #colorLiteral(red: 0.8446564078, green: 0.5145705342, blue: 1, alpha: 1), #colorLiteral(red: 1, green: 0.5781051517, blue: 0, alpha: 1)]
